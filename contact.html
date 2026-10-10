@@ -1,61 +1,510 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Grisan Acharya.">
-  <title>Contact | Grisan Acharya</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html"><span class="brand-mark">G</span><span>Grisan Acharya</span></a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="information.html">Information</a><a class="active" href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description"
+    content="Contact Grisan Acharya through email, phone, or social media.">
 
-  <main>
-    <section class="page-hero">
-      <div class="container"><p class="eyebrow">LET'S CONNECT</p><h1>Have something to <span>say?</span></h1><p class="muted">Use the form below to practise filling in a contact form, or reach out using the contact details provided.</p></div>
-    </section>
-    <section class="section container contact-layout">
-      <div class="contact-info">
-        <p class="eyebrow">CONTACT DETAILS</p><h2>I'd be glad to hear from you.</h2><p class="muted">For questions, ideas, or friendly conversation, use one of the details below.</p>
-        <div class="contact-detail"><span class="detail-icon" aria-hidden="true">@</span><div><span class="detail-label">Email</span><a href="mailto:grisanacharya27@gamil.com">grisanacharya27@gamil.com</a></div></div>
-        <div class="contact-detail"><span class="detail-icon" aria-hidden="true">☎</span><div><span class="detail-label">Phone</span><a href="tel:9822591033">9822591033</a></div></div>
-        <div class="contact-detail"><span class="detail-icon" aria-hidden="true">⌖</span><div><span class="detail-label">Location</span><span>Bharatpur-21, Chitwan</span></div></div>
-        <div class="contact-note"><strong>Note about this form</strong><p>This is a static HTML form for your assignment. It does not send or store messages unless you connect it to a form service or backend.</p></div>
-      </div>
-      <form class="contact-form" action="#" method="get">
-        <h2>Send a message</h2><p class="muted form-intro">Fields marked with * are required.</p>
-        <div class="form-row">
-          <div class="form-field"><label for="first-name">First name *</label><input id="first-name" name="first_name" type="text" placeholder="Your first name" autocomplete="given-name" required></div>
-          <div class="form-field"><label for="last-name">Last name *</label><input id="last-name" name="last_name" type="text" placeholder="Your last name" autocomplete="family-name" required></div>
-        </div>
-        <div class="form-row">
-          <div class="form-field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="Your phone number" autocomplete="tel"></div>
-          <div class="form-field"><label for="email">Email address *</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
-        </div>
-        <div class="form-field"><label for="address">Address</label><input id="address" name="address" type="text" placeholder="City or general address" autocomplete="street-address"></div>
-        <fieldset class="form-field fieldset"><legend>How would you prefer to be contacted?</legend><div class="radio-options"><label><input type="radio" name="contact_preference" value="email" checked> Email</label><label><input type="radio" name="contact_preference" value="phone"> Phone</label><label><input type="radio" name="contact_preference" value="no-preference"> No preference</label></div></fieldset>
-        <div class="form-field"><label for="subject">What is your message about?</label><select id="subject" name="subject"><option value="">Choose an option</option><option value="general">General question</option><option value="project">Project or collaboration</option><option value="feedback">Website feedback</option><option value="other">Other</option></select></div>
-        <div class="form-field"><label for="message">Message *</label><textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea></div>
-        <button class="button button-primary submit-button" type="submit">Submit message <span aria-hidden="true">→</span></button>
-        <p class="form-disclaimer">Static demo form. Submitting will not deliver a message.</p>
-      </form>
-    </section>
-  </main>
+<meta name="theme-color" content="#0b1020">
 
-  <footer class="site-footer">
-    <div class="container footer-main">
-      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">G</span><span>Grisan Acharya</span></a><p class="footer-blurb">A student portfolio and a record of learning.</p></div>
-      <div><h2 class="footer-title">Explore</h2><div class="footer-links"><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="information.html">Information</a><a href="contact.html">Contact</a></div></div>
-      <div><h2 class="footer-title">Get in touch</h2><a href="mailto:grisanacharya27@gamil.com">grisanacharya27@gamil.com</a><a href="tel:9822591033">9822591033</a><p class="footer-small">Social links can be added here later.</p></div>
+<title>Contact | Grisan Acharya</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+    /* Contact page */
+    .contact-hero {
+        padding: 100px 0 65px;
+    }
+
+    .contact-hero .eyebrow {
+        margin-bottom: 20px;
+    }
+
+    .contact-hero h1 {
+        max-width: 800px;
+        margin-bottom: 22px;
+    }
+
+    .contact-hero .lead {
+        max-width: 620px;
+    }
+
+    .contact-section {
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .contact-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 28px;
+        border: 1px solid rgba(156, 186, 255, 0.15);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.025);
+        transition: transform 0.25s ease, border-color 0.25s ease;
+        min-width: 0;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(156, 186, 255, 0.5);
+    }
+
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        color: #9cbaff;
+        background: rgba(108, 157, 255, 0.12);
+    }
+
+    .contact-icon svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+    }
+
+    .contact-card h2 {
+        font-size: 1.15rem;
+        margin: 2px 0 9px;
+    }
+
+    .contact-card p {
+        margin: 0 0 12px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-card a {
+        color: #9cbaff;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-card a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-label {
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #9cbaff;
+        margin-bottom: 8px !important;
+    }
+
+    .social-contact-section {
+        padding: 0 0 100px;
+    }
+
+    .social-contact-card {
+        padding: 36px;
+        border: 1px solid rgba(156, 186, 255, 0.15);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.025);
+    }
+
+    .social-contact-card h2 {
+        margin-bottom: 14px;
+    }
+
+    .social-contact-card > p {
+        max-width: 620px;
+        line-height: 1.8;
+    }
+
+    .contact-social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 28px;
+    }
+
+    .contact-social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 11px;
+        padding: 13px 18px;
+        color: #e8edff;
+        text-decoration: none;
+        border: 1px solid rgba(156, 186, 255, 0.18);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.025);
+        transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .contact-social-link:hover {
+        background: rgba(108, 157, 255, 0.1);
+        border-color: rgba(156, 186, 255, 0.5);
+    }
+
+    .contact-social-link svg {
+        width: 21px;
+        height: 21px;
+        flex-shrink: 0;
+        fill: currentColor;
+    }
+
+    .contact-social-link:focus-visible,
+    .contact-card a:focus-visible {
+        outline: 2px solid #9cbaff;
+        outline-offset: 4px;
+    }
+
+    .contact-note {
+        margin-top: 25px;
+        color: #aab5ce;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    @media (max-width: 700px) {
+        .contact-hero {
+            padding-top: 70px;
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .contact-card {
+            padding: 22px;
+        }
+
+        .social-contact-card {
+            padding: 25px;
+        }
+
+        .contact-social-links {
+            flex-direction: column;
+        }
+
+        .contact-social-link {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .contact-card,
+        .contact-social-link {
+            transition: none;
+        }
+
+        .contact-card:hover {
+            transform: none;
+        }
+    }
+</style>
+
+</head><body id="top"><!-- Navigation -->
+<header class="site-header">
+
+    <div class="wrap nav-container">
+
+        <a href="index.html" class="brand">
+            <span class="brand-mark">G</span>
+            <span>Grisan Acharya</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+
+            <ul class="menu">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="information.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" aria-current="page">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
     </div>
-    <div class="container footer-bottom"><span>© 2026 Grisan Acharya. All rights reserved.</span><span>Designed with HTML &amp; CSS.</span></div>
-  </footer>
+
+</header>
+
+
+<main>
+
+    <!-- Contact Introduction -->
+    <section class="contact-hero">
+
+        <div class="wrap">
+
+            <p class="eyebrow">
+                LET'S CONNECT
+            </p>
+
+            <h1>
+                Every connection
+                <span class="accent">starts somewhere.</span>
+            </h1>
+
+            <p class="lead">
+                Whether you want to say hello, share an idea,
+                or simply connect, you can find my contact details
+                and social accounts below.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Information -->
+    <section class="section contact-section">
+
+        <div class="wrap">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>
+                    Ways to
+                    <span class="accent">reach me.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <!-- Email -->
+                <article class="contact-card">
+
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <p class="contact-label">EMAIL</p>
+
+                        <h2>Send me an email</h2>
+
+                        <p>
+                            Have something to share? Email is one
+                            way to get in touch with me.
+                        </p>
+
+                        <a href="mailto:grisanacharya27@gmail.com">
+                            grisanacharya27@gmail.com
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- Phone -->
+                <article class="contact-card">
+
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.2 11.2 0 0 0 3.5.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10 21 3 14 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.2 11.2 0 0 0 .6 3.5 1 1 0 0 1-.2 1z"/>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <p class="contact-label">PHONE</p>
+
+                        <h2>Give me a call</h2>
+
+                        <p>
+                            You can reach me by phone when I'm
+                            available to answer.
+                        </p>
+
+                        <a href="tel:9822591033">
+                            9822591033
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Social Media -->
+    <section class="section social-contact-section">
+
+        <div class="wrap">
+
+            <div class="social-contact-card">
+
+                <p class="eyebrow">AROUND THE INTERNET</p>
+
+                <h2>
+                    Find me
+                    <span class="accent">online.</span>
+                </h2>
+
+                <p>
+                    I also use social media. Choose a platform below
+                    to visit my profile or open a Messenger conversation.
+                </p>
+
+
+                <div class="contact-social-links">
+
+                    <!-- Instagram -->
+                    <a
+                        class="contact-social-link"
+                        href="https://www.instagram.com/grisanacharya/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit Instagram profile"
+                    >
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.2-3.5a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"/>
+                        </svg>
+
+                        Instagram
+                        <span aria-hidden="true">↗</span>
+
+                    </a>
+
+
+                    <!-- Messenger -->
+                    <a
+                        class="contact-social-link"
+                        href="https://m.me/GrisanAcharya01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open Messenger conversation"
+                    >
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C6.2 2 2 6.3 2 12c0 3 1.3 5.5 3.5 7.2V22l3.2-1.8c1 .3 2.1.5 3.3.5 5.8 0 10-4.3 10-10S17.8 2 12 2zm1 13.5-2.6-2.8-5.1 2.8 5.6-6 2.6 2.8 5.1-2.8-5.6 6z"/>
+                        </svg>
+
+                        Messenger
+                        <span aria-hidden="true">↗</span>
+
+                    </a>
+
+
+                    <!-- TikTok -->
+                    <a
+                        class="contact-social-link"
+                        href="https://www.tiktok.com/@grisan25"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit TikTok profile"
+                    >
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19.6 6.4a5.7 5.7 0 0 1-3.5-1.2A5.7 5.7 0 0 1 14.2 2h-3.8v13.2a2.6 2.6 0 1 1-2.6-2.6c.4 0 .8.1 1.1.2V8.9a6.4 6.4 0 1 0 5.3 6.3V8.5a9.4 9.4 0 0 0 5.4 1.7V6.4z"/>
+                        </svg>
+
+                        TikTok
+                        <span aria-hidden="true">↗</span>
+
+                    </a>
+
+                </div>
+
+
+                <p class="contact-note">
+                    Social links open in a new tab. Please check that
+                    each link leads to the correct account.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+
+    <div class="wrap">
+
+        <div class="footer-main">
+
+            <a href="index.html" class="brand footer-brand">
+                <span class="brand-mark">G</span>
+                <span>Grisan Acharya</span>
+            </a>
+
+            <p>
+                A student portfolio.
+                A curious mind.
+                A journey still unfolding.
+            </p>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Grisan Acharya.
+                Personal portfolio.
+            </p>
+
+            <a href="#top" class="back-to-top">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+    document.querySelector(".back-to-top").addEventListener(
+        "click",
+        function (event) {
+            event.preventDefault();
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    );
+</script>
+
 </body>
 </html>
