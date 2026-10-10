@@ -1,243 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio | Grade 9 Student</title>
+    <meta name="description"
+        content="The personal portfolio of Grisan Acharya, a student who enjoys learning, discovering, and trying new things.">
 
-    <meta
-        name="description"
-        content="Welcome to my student portfolio. Explore my school subjects, learning journey, projects, interests, and personal growth."
-    >
+    <meta name="theme-color" content="#0b1020">
+
+    <title>Grisan Acharya | Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-
+    <!-- Navigation -->
     <header class="site-header">
-        <div class="nav-wrap">
+
+        <div class="wrap nav-container">
 
             <a href="index.html" class="brand">
-                <span class="brand-mark">P</span>
-                <span>My Portfolio</span>
+                <span class="brand-mark">G</span>
+                <span>Grisan Acharya</span>
             </a>
 
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="information.html">About Me</a>
-                <a href="contact.html">Contact</a>
+            <nav aria-label="Main navigation">
+
+                <ul class="menu">
+
+                    <li>
+                        <a href="index.html" aria-current="page">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="information.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
             </nav>
 
         </div>
+
     </header>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
-
     <main>
 
-        <!-- HERO SECTION -->
-
+        <!-- Hero Section -->
         <section class="hero">
 
-            <div class="hero-content">
+            <div class="wrap hero-grid">
 
-                <p class="eyebrow">MY STUDENT PORTFOLIO</p>
+                <div class="hero-content">
 
-                <h1>
-                    Learn. Explore.<br>
-                    <span>Improve. Repeat.</span>
-                </h1>
+                    <p class="eyebrow">
+                        <span class="status-dot"></span>
+                        A STUDENT. A LEARNER. A WORK IN PROGRESS.
+                    </p>
 
-                <p class="hero-description">
-                    Welcome to my portfolio! I am a Grade 9 student
-                    exploring different subjects, developing new skills,
-                    and learning something new every day.
-                </p>
+                    <h1>
+                        Hello, I'm
+                        <span class="accent">Grisan Acharya.</span>
+                    </h1>
 
-                <p class="hero-description">
-                    From solving mathematical problems and studying
-                    science to learning Python and creating websites,
-                    this portfolio represents my learning journey,
-                    interests, and progress.
-                </p>
+                    <p class="hero-role">
+                        Curious mind. Endless possibilities.
+                    </p>
 
-                <div class="hero-buttons">
-                    <a href="information.html" class="btn btn-primary">
-                        Get to Know Me
-                    </a>
+                    <p class="lead">
+                        I'm a student who enjoys discovering things I
+                        didn't know before. I like exploring different
+                        subjects, trying new things, and learning a little
+                        more about the world every day.
+                    </p>
 
-                    <a href="gallery.html" class="btn btn-secondary">
-                        Explore My Gallery
-                    </a>
+                    <p class="hero-note">
+                        I'm not trying to know everything.
+                        I'm here to keep learning.
+                    </p>
+
+                    <div class="btn-row">
+
+                        <a href="gallery.html" class="btn btn-primary">
+                            Explore my world
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="information.html" class="btn btn-secondary">
+                            Get to know me
+                        </a>
+
+                    </div>
+
+                    <div class="hero-footer-note">
+                        <span class="line"></span>
+                        LEARNING SOMETHING NEW, ONE DAY AT A TIME.
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="photo-orbit orbit-one"></div>
+                    <div class="photo-orbit orbit-two"></div>
+
+                    <figure class="hero-photo">
+
+                        <img
+                            src="images/profile.jpg"
+                            alt="Grisan Acharya wearing a beige vest and an orange flower garland"
+                            fetchpriority="high"
+                        >
+
+                        <figcaption class="photo-label">
+
+                            <span class="photo-label-icon">✳</span>
+
+                            <span>
+                                <strong>That's me.</strong>
+                                <small>Still becoming.</small>
+                            </span>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <div class="floating-card floating-card-top">
+
+                        <span class="floating-icon">✦</span>
+
+                        <span>
+                            <strong>Stay curious</strong>
+                            <small>Keep discovering</small>
+                        </span>
+
+                    </div>
+
+                    <div class="floating-card floating-card-bottom">
+
+                        <span class="floating-number">01</span>
+
+                        <span>
+                            <strong>My journey</strong>
+                            <small>Just getting started</small>
+                        </span>
+
+                    </div>
+
                 </div>
 
             </div>
 
-
-            <div class="hero-photo">
-
-                <img
-                    src="images/photo-5.jpg"
-                    alt="A personal photograph for my student portfolio"
-                >
-
-            </div>
-
         </section>
 
 
-        <!-- INTRODUCTION SECTION -->
-
+        <!-- Introduction -->
         <section class="section intro-section">
 
-            <div class="section-heading">
+            <div class="wrap">
 
-                <p class="eyebrow">A LITTLE ABOUT MY JOURNEY</p>
+                <div class="section-heading">
 
-                <h2>More Than Just a Student</h2>
+                    <p class="eyebrow">A LITTLE ABOUT ME</p>
 
-                <p>
-                    School is not only about examinations and grades.
-                    It is also about understanding the world, discovering
-                    our interests, learning from mistakes, and becoming
-                    better than we were yesterday.
-                </p>
+                    <h2>
+                        Curious by nature.
+                        <span class="accent">Always exploring.</span>
+                    </h2>
 
-            </div>
-
-
-            <div class="feature-grid">
-
-                <article class="feature-card">
-
-                    <div class="feature-icon">📚</div>
-
-                    <h3>Academic Learning</h3>
-
-                    <p>
-                        Exploring different school subjects and
-                        strengthening my understanding through
-                        practice, curiosity, and effort.
+                    <p class="lead">
+                        I believe there's always something new to learn,
+                        no matter how much you already know.
                     </p>
 
-                </article>
+                </div>
 
 
-                <article class="feature-card">
+                <div class="cards">
 
-                    <div class="feature-icon">💻</div>
+                    <article class="card">
 
-                    <h3>Technology</h3>
+                        <div class="card-number">01</div>
 
-                    <p>
-                        Learning Python programming and web development
-                        while discovering how technology can turn ideas
-                        into useful projects.
-                    </p>
+                        <h3>Every subject has something to teach.</h3>
 
-                </article>
+                        <p>
+                            I enjoy exploring different subjects and
+                            discovering how much there is to understand.
+                        </p>
+
+                    </article>
 
 
-                <article class="feature-card">
+                    <article class="card">
 
-                    <div class="feature-icon">🌱</div>
+                        <div class="card-number">02</div>
 
-                    <h3>Personal Growth</h3>
+                        <h3>A little bit of everything.</h3>
 
-                    <p>
-                        Improving my creativity, problem-solving,
-                        confidence, and ability to learn from challenges.
-                    </p>
+                        <p>
+                            I like trying different things. I may not
+                            have mastered one particular skill yet,
+                            but I'm always willing to learn something new.
+                        </p>
 
-                </article>
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">03</div>
+
+                        <h3>Questions lead to discoveries.</h3>
+
+                        <p>
+                            One of my favourite things is finding answers
+                            to questions I never knew I had.
+                        </p>
+
+                    </article>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- SCHOOL SUBJECTS SECTION -->
+        <!-- Personal Philosophy -->
+        <section class="section philosophy-section">
 
-        <section class="section subjects-section">
+            <div class="wrap">
 
-            <div class="section-heading">
+                <div class="philosophy-card">
 
-                <p class="eyebrow">MY ACADEMIC WORLD</p>
+                    <div class="philosophy-symbol" aria-hidden="true">
+                        “
+                    </div>
 
-                <h2>What I Learn at School</h2>
+                    <p class="eyebrow">A THOUGHT I BELIEVE IN</p>
+
+                    <h2>
+                        You don't have to know it all.
+                        <span class="accent">You just have to keep going.</span>
+                    </h2>
+
+                    <p class="philosophy-description">
+                        Every new experience teaches us something.
+                        Every mistake gives us another chance to understand.
+                        And every day is an opportunity to grow.
+                    </p>
+
+                    <div class="philosophy-signature">
+                        — My way of looking at life
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Upcoming Events -->
+        <section class="section events-section">
+
+            <div class="wrap">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">WHAT'S AHEAD</p>
+
+                    <h2>
+                        A few things
+                        <span class="accent">on the horizon.</span>
+                    </h2>
+
+                    <p class="lead">
+                        School brings new challenges, opportunities,
+                        and experiences to look forward to.
+                    </p>
+
+                </div>
+
+
+                <div class="events">
+
+                    <article class="event">
+
+                        <div class="event-marker">
+                            <span>01</span>
+                        </div>
+
+                        <div class="event-content">
+
+                            <p class="event-category">CREATIVITY</p>
+
+                            <h3>Art and Drawing Competition</h3>
+
+                            <p>
+                                An opportunity to explore creativity
+                                through drawing and painting.
+                            </p>
+
+                            <span class="event-date">
+                                18 November 2026
+                            </span>
+
+                        </div>
+
+                        <span class="event-arrow" aria-hidden="true">
+                            ↗
+                        </span>
+
+                    </article>
+
+
+                    <article class="event">
+
+                        <div class="event-marker">
+                            <span>02</span>
+                        </div>
+
+                        <div class="event-content">
+
+                            <p class="event-category">PREPARATION</p>
+
+                            <h3>Exam Day</h3>
+
+                            <p>
+                                A reminder that preparation,
+                                patience, and consistent effort matter.
+                            </p>
+
+                            <span class="event-date">
+                                7 December 2026
+                            </span>
+
+                        </div>
+
+                        <span class="event-arrow" aria-hidden="true">
+                            ↗
+                        </span>
+
+                    </article>
+
+
+                    <article class="event">
+
+                        <div class="event-marker">
+                            <span>03</span>
+                        </div>
+
+                        <div class="event-content">
+
+                            <p class="event-category">CONFIDENCE</p>
+
+                            <h3>Debate and Speech Competition</h3>
+
+                            <p>
+                                An opportunity for students to express
+                                ideas, share opinions, and develop
+                                their speaking skills.
+                            </p>
+
+                            <span class="event-date">
+                                12 December 2026
+                            </span>
+
+                        </div>
+
+                        <span class="event-arrow" aria-hidden="true">
+                            ↗
+                        </span>
+
+                    </article>
+
+                </div>
+
+                <p class="events-disclaimer">
+                    These are the events listed in my original portfolio.
+                    Dates and participation should be confirmed with the school.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Explore Other Pages -->
+        <section class="section explore-section">
+
+            <div class="wrap">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">TAKE A CLOSER LOOK</p>
+
+                    <h2>
+                        There's more
+                        <span class="accent">to discover.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="explore-grid">
+
+                    <a href="gallery.html" class="explore-card">
+
+                        <div class="explore-card-top">
+                            <span class="explore-number">01 / GALLERY</span>
+                            <span class="explore-arrow">↗</span>
+                        </div>
+
+                        <h3>My moments</h3>
+
+                        <p>
+                            A collection of photographs, memories,
+                            and moments worth keeping.
+                        </p>
+
+                    </a>
+
+
+                    <a href="information.html" class="explore-card">
+
+                        <div class="explore-card-top">
+                            <span class="explore-number">02 / ABOUT</span>
+                            <span class="explore-arrow">↗</span>
+                        </div>
+
+                        <h3>A little more about me</h3>
+
+                        <p>
+                            Get to know the student behind
+                            this little corner of the internet.
+                        </p>
+
+                    </a>
+
+
+                    <a href="contact.html" class="explore-card">
+
+                        <div class="explore-card-top">
+                            <span class="explore-number">03 / CONTACT</span>
+                            <span class="explore-arrow">↗</span>
+                        </div>
+
+                        <h3>Let's connect</h3>
+
+                        <p>
+                            Find my contact details and
+                            social media accounts.
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Social Media -->
+        <section class="section social-section">
+
+            <div class="wrap social-inner">
+
+                <div>
+
+                    <p class="eyebrow">AROUND THE INTERNET</p>
+
+                    <h2>
+                        Find me
+                        <span class="accent">online.</span>
+                    </h2>
+
+                    <p class="lead">
+                        You can find my social accounts below
+                        or visit the contact page for more details.
+                    </p>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <a
+                        class="social-link"
+                        href="https://www.instagram.com/grisanacharya/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                    >
+                        <span>IG</span>
+                        <span class="social-name">Instagram</span>
+                        <span class="social-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        class="social-link"
+                        href="https://m.me/GrisanAcharya01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook Messenger"
+                    >
+                        <span>FB</span>
+                        <span class="social-name">Messenger</span>
+                        <span class="social-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        class="social-link"
+                        href="https://www.tiktok.com/@grisan25"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok"
+                    >
+                        <span>TK</span>
+                        <span class="social-name">TikTok</span>
+                        <span class="social-arrow">↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="wrap">
+
+            <div class="footer-main">
+
+                <a href="index.html" class="brand footer-brand">
+
+                    <span class="brand-mark">G</span>
+
+                    <span>Grisan Acharya</span>
+
+                </a>
 
                 <p>
-                    Each subject gives me a different way to understand
-                    the world. Here are the main subjects that are part
-                    of my Grade 9 learning journey.
+                    A student portfolio.
+                    A curious mind.
+                    A journey still unfolding.
                 </p>
 
             </div>
 
 
-            <div class="subjects-grid">
+            <div class="footer-bottom">
 
-                <article class="subject-card">
+                <p>
+                    &copy; 2026 Grisan Acharya.
+                    Personal portfolio.
+                </p>
 
-                    <div class="subject-icon">📖</div>
+                <a href="#top" class="back-to-top">
+                    Back to top ↑
+                </a>
 
-                    <h3>English</h3>
+            </div>
 
-                    <p>
-                        Developing my reading, writing, grammar,
-                        vocabulary, and communication skills.
-                    </p>
+        </div>
 
-                </article>
-
-
-                <article class="subject-card">
-
-                    <div class="subject-icon">🔢</div>
-
-                    <h3>Mathematics</h3>
-
-                    <p>
-                        Practising calculations, understanding
-                        mathematical concepts, and solving problems
-                        step by step.
-                    </p>
-
-                </article>
+    </footer>
 
 
-                <article class="subject-card">
+    <script>
 
-                    <div class="subject-icon">अ</div>
+        // Smoothly return to the top when the footer link is clicked.
+        document.querySelector(".back-to-top").addEventListener(
+            "click",
+            function (event) {
 
-                    <h3>Nepali</h3>
+                event.preventDefault();
 
-                    <p>
-                        Learning Nepali language, literature,
-                        grammar, reading, and written expression.
-                    </p>
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
 
-                </article>
+            }
+        );
 
+    </script>
 
-                <article class="subject-card">
+</body>
 
-                    <div class="subject-icon">💻</div>
-
-                    <h3>Computer</h3>
-
-                    <p>
-                        Understanding computers, digital technology,
-                        and the basics of programming and web development.
-                    </p>
-
-                </article>
-
-
-                <article class="subject
+    </html>
