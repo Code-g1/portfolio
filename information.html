@@ -8,85 +8,148 @@
     <meta name="description"
         content="Learn more about Grisan Acharya, a student who enjoys discovering, learning, and trying new things.">
 
-    <title>About Me | Grisan Acharya</title>
+    <meta name="theme-color" content="#0b1020">
+
+    <title>About | Grisan Acharya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
-    <!-- ================= HEADER ================= -->
-
+    <!-- Header -->
     <header class="site-header">
-        <nav class="navbar container">
+        <div class="wrap nav-container">
 
-            <a href="index.html" class="logo">Grisan Acharya</a>
+            <a class="brand" href="index.html">
+                <span class="brand-mark">G</span>
+                <span>Grisan Acharya</span>
+            </a>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="information.html" class="active">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <nav class="menu" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="information.html" aria-current="page">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-        </nav>
+        </div>
     </header>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
-
+    <!-- Main Content -->
     <main>
 
         <!-- Page Introduction -->
-        <section class="page-hero section">
-            <div class="container">
+        <section class="page-head">
+            <div class="wrap">
 
                 <p class="eyebrow">GET TO KNOW ME</p>
 
-                <h1>A Little <span>About Me</span></h1>
+                <h1>A little about <span class="accent">me.</span></h1>
 
-                <p class="section-description">
-                    Every person has a story, different interests, and something new to learn.
-                    Here is a little more about who I am.
+                <p>
+                    Every person has a story, different interests,
+                    and something new to learn. Here's a little more
+                    about the student behind this portfolio.
                 </p>
 
             </div>
         </section>
 
 
-        <!-- Personal Information -->
+        <!-- Profile and Personal Information -->
         <section class="section">
-            <div class="container">
+            <div class="wrap">
 
-                <div class="section-heading">
-                    <p class="eyebrow">THE BASICS</p>
-                    <h2>Who I Am</h2>
-                    <p>
-                        A student, a learner, and someone who enjoys exploring new things.
-                    </p>
-                </div>
+                <div class="about-grid">
 
-                <div class="card-grid">
+                    <!-- Profile Card -->
+                    <article class="profile-card">
 
-                    <article class="info-card">
-                        <h3>Full Name</h3>
-                        <p>Grisan Acharya</p>
+                        <img
+                            src="images/photo-3.jpg"
+                            alt="Grisan Acharya wearing a beige vest and an orange flower garland"
+                            loading="lazy"
+                        >
+
+                        <h2>Grisan Acharya</h2>
+
+                        <p>
+                            Student, learner, and a curious mind
+                            always looking for something new to discover.
+                        </p>
+
                     </article>
 
-                    <article class="info-card">
-                        <h3>Occupation</h3>
-                        <p>Student</p>
-                    </article>
 
-                    <article class="info-card">
-                        <h3>School</h3>
-                        <p>Annapurna Secondary School</p>
-                    </article>
+                    <!-- About Content -->
+                    <div class="about-content">
 
-                    <article class="info-card">
-                        <h3>Favorite Subjects</h3>
-                        <p>Every subject</p>
-                    </article>
+                        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+
+                        <h2>Curious by nature. Always exploring.</h2>
+
+                        <p>
+                            I'm a student at Annapurna Secondary School.
+                            I enjoy discovering things I didn't know before,
+                            exploring different subjects, and learning more
+                            about the world around me.
+                        </p>
+
+                        <p>
+                            I like trying different things and gaining
+                            new experiences. I don't expect to know
+                            everything already. I'd rather stay curious,
+                            ask questions, and keep learning along the way.
+                        </p>
+
+                        <p>
+                            For me, learning isn't just about what I know
+                            today. It's also about what I can discover
+                            tomorrow.
+                        </p>
+
+
+                        <!-- Personal Information Table -->
+                        <table class="info-table">
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Full Name</th>
+                                    <td>Grisan Acharya</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Occupation</th>
+                                    <td>Student</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">School</th>
+                                    <td>Annapurna Secondary School</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Favorite Subjects</th>
+                                    <td>Every subject</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Languages</th>
+                                    <td>Nepali and English</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
 
                 </div>
 
@@ -94,41 +157,70 @@
         </section>
 
 
-        <!-- Interests and Personality -->
-        <section class="section section-alt">
-            <div class="container">
+        <!-- Interests and Skills -->
+        <section class="section intro-section">
+            <div class="wrap">
 
                 <div class="section-heading">
+
                     <p class="eyebrow">WHAT MAKES ME, ME</p>
-                    <h2>My Interests</h2>
-                    <p>
-                        I believe there is always something worth discovering.
+
+                    <h2>
+                        My interests and
+                        <span class="accent">skills.</span>
+                    </h2>
+
+                    <p class="lead">
+                        I'm always open to learning something new
+                        and exploring different interests.
                     </p>
+
                 </div>
 
-                <div class="card-grid">
 
-                    <article class="info-card">
+                <div class="cards">
+
+                    <article class="card">
+
+                        <div class="card-number">01</div>
+
                         <h3>My Hobbies</h3>
+
                         <p>
                             Discovering and learning things I don't know.
-                            I enjoy exploring new ideas and gaining new knowledge.
+                            I enjoy exploring new ideas and gaining
+                            knowledge along the way.
                         </p>
+
                     </article>
 
-                    <article class="info-card">
+
+                    <article class="card">
+
+                        <div class="card-number">02</div>
+
                         <h3>My Skills</h3>
+
                         <p>
                             Jack of all trades, master of none.
-                            I enjoy trying different things and learning along the way.
+                            I enjoy trying different things, developing
+                            new abilities, and learning from experience.
                         </p>
+
                     </article>
 
-                    <article class="info-card">
+
+                    <article class="card">
+
+                        <div class="card-number">03</div>
+
                         <h3>My Languages</h3>
+
                         <p>
-                            Nepali and English.
+                            Nepali and English help me communicate,
+                            express my thoughts, and learn from others.
                         </p>
+
                     </article>
 
                 </div>
@@ -139,24 +231,29 @@
 
         <!-- Personal Philosophy -->
         <section class="section">
-            <div class="container">
+            <div class="wrap">
 
                 <div class="philosophy-card">
 
+                    <div class="philosophy-symbol" aria-hidden="true">
+                        “
+                    </div>
+
                     <p class="eyebrow">MY WAY OF THINKING</p>
 
-                    <h2>Always Room to Learn</h2>
+                    <h2>
+                        You don't have to know it all.
+                        <span class="accent">You just have to keep going.</span>
+                    </h2>
 
-                    <p>
-                        I don't believe I need to know everything.
-                        I believe in staying curious, exploring what I don't understand,
-                        learning from mistakes, and improving little by little.
+                    <p class="philosophy-description">
+                        Every new experience teaches us something.
+                        Every mistake gives us another chance to understand.
+                        And every day is an opportunity to grow.
                     </p>
 
-                    <p>
-                        There will always be something I haven't tried,
-                        something I haven't discovered, and something I can do better.
-                        That's what makes learning interesting.
+                    <p class="philosophy-signature">
+                        — My way of looking at life
                     </p>
 
                 </div>
@@ -166,48 +263,90 @@
 
 
         <!-- Social Media -->
-        <section class="section section-alt">
-            <div class="container">
+        <section class="section social-section">
+            <div class="wrap">
 
-                <div class="section-heading">
-                    <p class="eyebrow">FIND ME ONLINE</p>
-                    <h2>Let's Connect</h2>
-                    <p>
-                        You can find me on these platforms.
-                    </p>
-                </div>
+                <div class="social-inner">
 
-                <div class="card-grid">
+                    <div>
 
-                    <article class="info-card">
-                        <h3>Instagram</h3>
-                        <p>
-                            <a href="https://www.instagram.com/grisanacharya/"
-                                target="_blank" rel="noopener noreferrer">
-                                @grisanacharya
-                            </a>
+                        <p class="eyebrow">AROUND THE INTERNET</p>
+
+                        <h2>
+                            Find me
+                            <span class="accent">online.</span>
+                        </h2>
+
+                        <p class="lead">
+                            You can find my social accounts below
+                            or contact me if you'd like to connect.
                         </p>
-                    </article>
 
-                    <article class="info-card">
-                        <h3>TikTok</h3>
-                        <p>
-                            <a href="https://www.tiktok.com/@grisan25"
-                                target="_blank" rel="noopener noreferrer">
-                                @grisan25
-                            </a>
-                        </p>
-                    </article>
+                    </div>
 
-                    <article class="info-card">
-                        <h3>Facebook Messenger</h3>
-                        <p>
-                            <a href="https://m.me/GrisanAcharya01"
-                                target="_blank" rel="noopener noreferrer">
-                                GrisanAcharya01
-                            </a>
-                        </p>
-                    </article>
+
+                    <div class="social-links">
+
+                        <!-- Instagram -->
+                        <a
+                            class="social-link"
+                            href="https://www.instagram.com/grisanacharya/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit Instagram profile"
+                        >
+
+                            <span aria-hidden="true">IG</span>
+
+                            <span class="social-name">
+                                Instagram — @grisanacharya
+                            </span>
+
+                            <span class="social-arrow" aria-hidden="true">↗</span>
+
+                        </a>
+
+
+                        <!-- Facebook Messenger -->
+                        <a
+                            class="social-link"
+                            href="https://m.me/GrisanAcharya01"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open Facebook Messenger"
+                        >
+
+                            <span aria-hidden="true">M</span>
+
+                            <span class="social-name">
+                                Facebook Messenger
+                            </span>
+
+                            <span class="social-arrow" aria-hidden="true">↗</span>
+
+                        </a>
+
+
+                        <!-- TikTok -->
+                        <a
+                            class="social-link"
+                            href="https://www.tiktok.com/@grisan25"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit TikTok profile"
+                        >
+
+                            <span aria-hidden="true">TT</span>
+
+                            <span class="social-name">
+                                TikTok — @grisan25
+                            </span>
+
+                            <span class="social-arrow" aria-hidden="true">↗</span>
+
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -217,21 +356,26 @@
 
         <!-- Contact Prompt -->
         <section class="section">
-            <div class="container">
+            <div class="wrap">
 
-                <div class="cta-card">
+                <div class="philosophy-card">
 
-                    <p class="eyebrow">WANT TO REACH ME?</p>
+                    <p class="eyebrow">LET'S CONNECT</p>
 
-                    <h2>Let's Talk</h2>
+                    <h2>
+                        Have something
+                        <span class="accent">to say?</span>
+                    </h2>
 
-                    <p>
-                        Have a question or want to get in touch?
-                        Visit my contact page to find my contact details.
+                    <p class="philosophy-description">
+                        Whether you have a question or simply want
+                        to get in touch, you can find my contact details
+                        on the contact page.
                     </p>
 
                     <a href="contact.html" class="btn btn-primary">
-                        Contact Me
+                        Visit Contact Page
+                        <span aria-hidden="true">↗</span>
                     </a>
 
                 </div>
@@ -242,16 +386,37 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
-
+    <!-- Footer -->
     <footer class="site-footer">
-        <div class="container footer-content">
+        <div class="wrap">
 
-            <p>
-                &copy; 2026 Grisan Acharya. All rights reserved.
-            </p>
+            <div class="footer-main">
 
-            <p>Learning. Exploring. Growing.</p>
+                <a href="index.html" class="brand footer-brand">
+                    <span class="brand-mark">G</span>
+                    <span>Grisan Acharya</span>
+                </a>
+
+                <p>
+                    A student portfolio.
+                    A curious mind.
+                    A journey still unfolding.
+                </p>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Grisan Acharya.
+                    Personal portfolio.
+                </p>
+
+                <a href="#top" class="back-to-top">
+                    Back to top ↑
+                </a>
+
+            </div>
 
         </div>
     </footer>
