@@ -7,7 +7,15 @@
     <meta name="description"
           content="A collection of memories, moments with friends, and special days from Grisan Acharya.">
 
+    <meta name="theme-color" content="#0b1020">
+
     <title>Gallery | Grisan Acharya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,7 +34,7 @@
             <nav class="menu" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="gallery.html" aria-current="page">Gallery</a>
-                <a href="information.html">About</a>
+                <a href="information.html">Information</a>
                 <a href="contact.html">Contact</a>
             </nav>
 
@@ -56,7 +64,57 @@
 
                 <div class="gallery-grid">
 
-                    <!-- Memory 1 -->
+                    <article class="moment">
+
+                        <h2>Special moments</h2>
+
+                        <p>
+                            Calm pauses and bright days I'll remember.
+                        </p>
+
+                        <div class="photo-row">
+
+                            <figure class="photo">
+                                <img
+                                    src="images/photo-3.jpg"
+                                    alt="Grisan wearing a beige vest and an orange flower garland"
+                                    loading="lazy"
+                                >
+
+                                <figcaption>
+                                    A bright day of celebration
+                                </figcaption>
+                            </figure>
+
+                            <figure class="photo">
+                                <img
+                                    src="images/photo-5.jpg"
+                                    alt="Grisan looking up outdoors in a beige vest"
+                                    loading="lazy"
+                                >
+
+                                <figcaption>
+                                    A quiet moment, looking up and wondering
+                                </figcaption>
+                            </figure>
+
+                            <figure class="photo">
+                                <img
+                                    src="images/photo-2.jpg"
+                                    alt="Grisan standing in a white shirt in front of a yellow wall"
+                                    loading="lazy"
+                                >
+
+                                <figcaption>
+                                    Standing tall on a sunny day
+                                </figcaption>
+                            </figure>
+
+                        </div>
+
+                    </article>
+
+
                     <article class="moment">
 
                         <h2>Moments with friends</h2>
@@ -65,65 +123,45 @@
                             Good company makes every trip better.
                         </p>
 
-                        <figure class="photo">
-                            <img
-                                src="images/photo-4.jpg"
-                                alt="Grisan enjoying a moment with friends on a bus"
-                                loading="lazy"
-                            >
+                        <div class="photo-row">
 
-                            <figcaption>
-                                Together on the bus, all smiles
-                            </figcaption>
-                        </figure>
+                            <figure class="photo">
+                                <img
+                                    src="images/photo-4.jpg"
+                                    alt="Grisan and friends smiling together on a bus"
+                                    loading="lazy"
+                                >
 
-                    </article>
+                                <figcaption>
+                                    Together on the bus, all smiles
+                                </figcaption>
+                            </figure>
 
+                            <figure class="photo">
+                                <img
+                                    src="images/photo-2.jpg"
+                                    alt="Grisan in a white shirt and tika at a festive place"
+                                    loading="lazy"
+                                >
 
-                    <!-- Memory 2 -->
-                    <article class="moment">
+                                <figcaption>
+                                    A festive day out
+                                </figcaption>
+                            </figure>
 
-                        <h2>Special moment</h2>
+                            <figure class="photo">
+                                <img
+                                    src="images/photo-3.jpg"
+                                    alt="Grisan smiling with a flower garland"
+                                    loading="lazy"
+                                >
 
-                        <p>
-                            A calm pause outdoors.
-                        </p>
+                                <figcaption>
+                                    Dressed up and happy
+                                </figcaption>
+                            </figure>
 
-                        <figure class="photo">
-                            <img
-                                src="images/photo-5.jpg"
-                                alt="A quiet outdoor moment"
-                                loading="lazy"
-                            >
-
-                            <figcaption>
-                                A quiet moment, looking up and wondering
-                            </figcaption>
-                        </figure>
-
-                    </article>
-
-
-                    <!-- Memory 3 -->
-                    <article class="moment">
-
-                        <h2>Occasion</h2>
-
-                        <p>
-                            A colorful day I'll remember.
-                        </p>
-
-                        <figure class="photo">
-                            <img
-                                src="images/photo-3.jpg"
-                                alt="A colorful day of celebration"
-                                loading="lazy"
-                            >
-
-                            <figcaption>
-                                A bright day of celebration
-                            </figcaption>
-                        </figure>
+                        </div>
 
                     </article>
 
@@ -141,49 +179,69 @@
 
             <div class="footer-main">
 
-                <a class="brand" href="index.html">
-                    <span class="brand-mark">G</span>
-                    <span>Grisan Acharya</span>
-                </a>
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="brand footer-brand" aria-label="Grisan Acharya home">
+                        <span class="brand-mark">G</span>
+                        <span>Grisan Acharya</span>
+                    </a>
 
-                <p>
-                    A student portfolio and a record of learning.
-                </p>
-
-                <div>
-                    <h3>Explore</h3>
-
-                    <nav class="menu" aria-label="Footer navigation">
-                        <a href="index.html">Home</a>
-                        <a href="gallery.html" aria-current="page">Gallery</a>
-                        <a href="contact.html">Contact</a>
-                        <a href="information.html">About</a>
-                    </nav>
+                    <p>
+                        A student portfolio. A curious mind.
+                        A journey still unfolding.
+                    </p>
                 </div>
 
-                <div>
+                <div class="footer-col">
+                    <h3>Explore</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="information.html">Information</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
                     <h3>Get in touch</h3>
 
-                    <p>
-                        Email:
-                        <a href="mailto:grisanacharya27@gmail.com">
-                            grisanacharya27@gmail.com
-                        </a>
-                    </p>
+                    <ul class="footer-links">
+                        <li>
+                            Email:
+                            <a href="mailto:grisanacharya27@gmail.com">grisanacharya27@gmail.com</a>
+                        </li>
+                        <li>
+                            Phone:
+                            <a href="tel:9822591033">9822591033</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <p>
-                        Phone:
-                        <a href="tel:9822591033">9822591033</a>
-                    </p>
+                <div class="footer-col">
+                    <h3>Social media</h3>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://www.instagram.com/grisanacharya/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                        </li>
+                        <li>
+                            <a href="https://m.me/GrisanAcharya01" target="_blank" rel="noopener noreferrer">Messenger ↗</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@grisan25" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
 
             <div class="footer-bottom">
                 <p>
-                    © 2026 Grisan Acharya. This website is owned by
+                    &copy; 2026 Grisan Acharya. This website is owned by
                     Grisan Acharya and was created in October 2026.
                 </p>
+
+                <a href="#top" class="back-to-top">Back to top ↑</a>
             </div>
 
         </div>
