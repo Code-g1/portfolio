@@ -851,8 +851,19 @@ body::before {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: 23px;
+}
+
+.photo-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.photo-row .photo {
+    margin-top: 0;
 }
 
 .moment {
@@ -1119,11 +1130,21 @@ body::before {
 }
 
 .footer-main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 13px;
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr 1.4fr 1fr;
+    align-items: start;
+    gap: 30px;
     padding-bottom: 25px;
+}
+
+.footer-col {
+    min-width: 0;
+}
+
+.footer-col h3 {
+    margin-bottom: 12px;
+    color: var(--white);
+    font-size: 0.95rem;
 }
 
 .footer-main p {
@@ -1131,6 +1152,26 @@ body::before {
     margin-bottom: 0;
     color: var(--muted);
     font-size: 0.9rem;
+}
+
+.footer-about p {
+    margin-top: 13px;
+}
+
+.footer-links {
+    display: grid;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    overflow-wrap: anywhere;
+}
+
+.footer-links a {
+    color: var(--text);
+}
+
+.footer-links a:hover {
+    color: var(--blue-light);
 }
 
 .footer-bottom {
@@ -1154,6 +1195,111 @@ body::before {
     color: var(--blue);
     font-size: 0.85rem;
     font-weight: 600;
+}
+
+/* Radio buttons in the contact form */
+
+.radio-group {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    margin: 0 0 15px;
+    padding: 0;
+    border: 0;
+}
+
+.radio-group legend {
+    margin-bottom: 9px;
+    padding: 0;
+    color: var(--text);
+    font-size: 0.87rem;
+    font-weight: 600;
+}
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.radio-group input {
+    accent-color: var(--blue);
+}
+
+.contact-form-section .btn {
+    margin-top: 6px;
+}
+
+/* Upcoming events (home page) */
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 22px;
+
+    border: 1px solid var(--line);
+    border-radius: 22px;
+
+    background: var(--bg-soft);
+    transition: transform 0.25s, border-color 0.25s;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(108, 157, 255, 0.4);
+}
+
+.event-date {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    padding: 9px 0;
+
+    border: 1px solid rgba(108, 157, 255, 0.25);
+    border-radius: 14px;
+
+    background: rgba(108, 157, 255, 0.08);
+    color: var(--blue-light);
+    line-height: 1.1;
+}
+
+.event-day {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.event-month {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.event-card h3 {
+    margin-bottom: 6px;
+    color: var(--white);
+    font-size: 1.05rem;
+}
+
+.event-card p {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
 }
 
 /* Animation */
@@ -1449,3 +1595,30 @@ body::before {
         transition: none !important;
     }
        }
+
+/* Added responsive rules: footer, events, gallery rows */
+
+@media (max-width: 900px) {
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .events-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-main {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .photo-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
